@@ -14,7 +14,7 @@ bool dfs(int node, int col, int color[], vector<int>adj[]) {
 	}
 
 }
-bool isBipertite(int V, vector<int>adj[]) {
+bool isBipartite(int V, vector<int>adj[]) {
 	int vis[V] = { -1};
 	for (int i = 0; i < V; i++) {
 		if (vis[i] == -1) {
@@ -41,7 +41,7 @@ int main() {
 	addEdge(adj, 3, 1);
 
 
-	bool ans = isBipertite(4, adj);
+	bool ans = isBipartite(4, adj);
 	if (ans)cout << "1\n";
 	else cout << "0\n";
 
